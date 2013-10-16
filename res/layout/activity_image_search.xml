@@ -25,6 +25,7 @@
         android:layout_alignBaseline="@+id/etSearchTerm"
         android:layout_toRightOf="@id/etSearchTerm"
         android:layout_alignBottom="@+id/etSearchTerm"
+        android:layout_marginLeft="40dp"
         android:layout_alignParentRight="true"
         android:onClick="onImageSearch"
         android:text="Search" />

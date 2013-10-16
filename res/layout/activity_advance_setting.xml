@@ -14,16 +14,17 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="20dp"
-        android:text="Advance Search Options"
-        android:textSize="20sp" />
+        android:layout_marginTop="15dp"
+        android:text="Advance Search Options:"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/imageSize"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/textView1"
-        android:layout_marginTop="14dp"
+        android:layout_marginTop="15dp"
         android:text="Image Size"
         android:textSize="15dp" />
 
@@ -31,23 +32,12 @@
         android:id="@+id/imageSizeValue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/imageSize"
+        android:layout_alignParentRight="true"
         android:layout_alignTop="@+id/imageSize"
+        android:layout_marginLeft="50dp"
         android:layout_toRightOf="@+id/imageSize"
         android:entries="@array/image_size" />
-    <!--
-    <EditText
-        android:id="@+id/imageSizeValue"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/imageSize"
-        android:layout_marginLeft="48dp"
-        android:layout_toRightOf="@+id/imageSize"
-        android:ems="10"
-        android:hint="Image Size" > 
-
-        <requestFocus />
-    </EditText>
-    -->
 
     <TextView
         android:id="@+id/colorFilter"
@@ -55,7 +45,7 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/imageSize"
         android:layout_below="@+id/imageSizeValue"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="15dp"
         android:text="Color Filter" />
 
     <TextView
@@ -64,7 +54,7 @@
         android:layout_height="wrap_content"
         android:layout_alignRight="@+id/colorFilter"
         android:layout_below="@+id/colorFilter"
-        android:layout_marginTop="42dp"
+        android:layout_marginTop="15dp"
         android:text="Image Type" />
 
     <Spinner
@@ -74,18 +64,8 @@
         android:layout_alignBaseline="@+id/colorFilter"
         android:layout_alignBottom="@+id/colorFilter"
         android:layout_alignLeft="@+id/imageSizeValue"
+        android:layout_alignParentRight="true"
         android:entries="@array/image_color" />
-
-    <!--
-         <EditText
-        android:id="@+id/colorFilterValue"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/colorFilter"
-        android:layout_alignBottom="@+id/colorFilter"
-        android:layout_alignLeft="@+id/imageSizeValue"
-        android:ems="10" />
-    -->
 
     <Spinner
         android:id="@+id/imageTypeValue"
@@ -94,17 +74,8 @@
         android:layout_alignBaseline="@+id/imageType"
         android:layout_alignBottom="@+id/imageType"
         android:layout_alignLeft="@+id/colorFilterValue"
+        android:layout_alignParentRight="true"
         android:entries="@array/image_type" />
-    <!--
-    <EditText
-        android:id="@+id/imageTypeValue"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/imageType"
-        android:layout_alignBottom="@+id/imageType"
-        android:layout_alignLeft="@+id/colorFilterValue"
-        android:ems="10" />
-    -->
 
     <TextView
         android:id="@+id/siteText"
@@ -112,7 +83,7 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/imageType"
         android:layout_below="@+id/imageType"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="15dp"
         android:text="Site" />
 
     <EditText
@@ -122,7 +93,8 @@
         android:layout_alignBaseline="@+id/siteText"
         android:layout_alignBottom="@+id/siteText"
         android:layout_alignLeft="@+id/imageTypeValue"
-        android:ems="10" />
+        android:layout_alignParentRight="true"
+        android:textSize="14sp" />
 
     <Button
         android:id="@+id/saveButton"
@@ -130,7 +102,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/siteValue"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="14dp"
+        android:layout_marginTop="50dp"
         android:onClick="setupReturnIntent"
         android:text="Save" />
 
