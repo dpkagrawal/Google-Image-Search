@@ -14,18 +14,17 @@ import com.codepath.google.imagesearch.model.ImageParameters;
 
 public class AdvanceSettingActivity extends Activity {
 
-	Spinner imageSize;
-	Spinner colorFilter;
-	Spinner imageType;
-	EditText site;
-	Button save;
+	private Spinner imageSize;
+	private Spinner colorFilter;
+	private Spinner imageType;
+	private EditText site;
+	private Button save;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_advance_setting);
 		setupViews();
-
 	}
 
 	public void setupViews() {
@@ -52,9 +51,7 @@ public class AdvanceSettingActivity extends Activity {
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.advance_setting, menu);
 		return true;
 	}
-
 }

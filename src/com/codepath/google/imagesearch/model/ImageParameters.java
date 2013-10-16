@@ -99,9 +99,8 @@ public class ImageParameters implements Serializable {
 			params.put("as_sitesearch", this.getSite());
 
 		params.put("start", Integer.toString(this.getStart()));
-		params.put("end", Integer.toString(this.getLimit()));
+		params.put("rsz", Integer.toString(this.getLimit()));
 		params.put("v", "1.0");
 		return params;
 	}
-
 }

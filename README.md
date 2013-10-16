@@ -2,11 +2,15 @@ Google-Image-Search
 ==============================================================
 A Simple Google Image Search to understand following concepts:
 
-Network Calls.(API calls)
+MVC Concept.
+
+Network Calls(API calls).
 
 Passing Data Between Activities.
 
-Spinners
+Grid View.
+
+Spinners.
 
 Infinite Scroll.
 

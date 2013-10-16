@@ -10,6 +10,10 @@ public class Query {
 	String path;
 	HashMap<String, String> params;
 
+	public Query(String path) {
+		this.path = path;
+	}
+
 	public Query(String path, HashMap<String, String> params) {
 		this.path = path;
 		this.params = new HashMap<String, String>();

@@ -26,7 +26,7 @@
         android:layout_toRightOf="@id/etSearchTerm"
         android:layout_alignBottom="@+id/etSearchTerm"
         android:layout_alignParentRight="true"
-        android:onClick="onImageView"
+        android:onClick="onImageSearch"
         android:text="Search" />
 
     <GridView
@@ -38,5 +38,4 @@
         android:layout_marginTop="20dp"
         android:numColumns="3" >
     </GridView>
-
 </RelativeLayout>
