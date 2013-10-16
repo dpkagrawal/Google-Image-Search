@@ -16,19 +16,19 @@
         android:layout_alignParentTop="true"
         android:layout_marginTop="18dp"
         android:hint="Search Term" 
-        android:ems="8"/>
+        android:ems="12"/>
 
-    <Button
+    <ImageButton
         android:id="@+id/btSubmit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/etSearchTerm"
         android:layout_toRightOf="@id/etSearchTerm"
         android:layout_alignBottom="@+id/etSearchTerm"
         android:layout_marginLeft="40dp"
         android:layout_alignParentRight="true"
         android:onClick="onImageSearch"
-        android:text="Search" />
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_action_search" />
 
     <GridView
         android:id="@+id/gvImageView"

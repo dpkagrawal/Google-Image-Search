@@ -32,7 +32,6 @@ public class ImageSearchActivity extends Activity {
 
 	private static String GOOGLE_SEARCH_HOST = "https://ajax.googleapis.com/ajax/services/search/images";
 	EditText etSearchTerm;
-	Button btSubmit;
 	GridView gvImageView;
 	Query query;
 	ArrayList<Image> images = new ArrayList<Image>();
@@ -78,7 +77,6 @@ public class ImageSearchActivity extends Activity {
 
 	public void setupViews() {
 		etSearchTerm = (EditText) findViewById(R.id.etSearchTerm);
-		btSubmit = (Button) findViewById(R.id.btSubmit);
 		gvImageView = (GridView) findViewById(R.id.gvImageView);
 	}
 
