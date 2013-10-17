@@ -14,7 +14,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.GridView;
 import android.widget.Toast;
@@ -54,7 +53,7 @@ public class ImageSearchActivity extends Activity {
 
 			@Override
 			public void onLoadMore(int page, int totalItemsCount) {
-				imgParams.setStart(page);
+				imgParams.setStart(page*8);
 				getImagesFromGoogle();
 			}
 		});
@@ -81,6 +80,7 @@ public class ImageSearchActivity extends Activity {
 	}
 
 	public void onImageSearch(View view) {
+		imageAdapter.clear();
 		String searchTerm = etSearchTerm.getText().toString();
 		imgParams.setQuery(searchTerm);
 
